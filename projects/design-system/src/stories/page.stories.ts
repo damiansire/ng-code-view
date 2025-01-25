@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { expect, userEvent, within } from '@storybook/test';
 
-import { PageComponent } from './page.component';
+import { PageComponent } from '../lib/components/page/page.component';
 
 const meta: Meta<PageComponent> = {
   title: 'Example/Page',
