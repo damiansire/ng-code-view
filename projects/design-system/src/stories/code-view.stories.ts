@@ -11,12 +11,12 @@ const meta: Meta<CodeViewComponent> = {
   render: (args) => ({
     props: {
       ...args,
-      htmlCode: signal(args.htmlCode), // Wrap htmlCode in a signal
     },
   }),
 };
 
 export default meta;
+
 type Story = StoryObj<CodeViewComponent>;
 
 const code = `
@@ -37,6 +37,7 @@ const code2 = `
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Primary: Story = {
   args: {
+    htmlCode: '<p>No code </p>',
     textSize: 'text-2xl',
     selectBy: 'Element',
   },

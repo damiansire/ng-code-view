@@ -11,6 +11,26 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "code",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "`\r\n<div class=\"container\">\r\n  <h1>Hello World</h1>\r\n  <p>This is a paragraph of text.</p>\r\n</div>\r\n`"
+            },
+            {
+                "name": "code2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "`\r\n<div class=\"container\">\r\n  <h1>Hello World</h1>\r\n  <p>This is a paragraph of text.</p>\r\n  <button (click)=\"onClick()\">Click me</button>\r\n</div>\r\n`"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -74,6 +94,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<CodeViewComponent>",
+                "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n      htmlCode: signal(args.htmlCode), // Wrap htmlCode in a signal\r\n    },\r\n  }),\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/design-system/src/stories/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -111,6 +141,16 @@
                 "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -119,6 +159,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "SelectByElement",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    htmlCode: code2,\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+            },
+            {
+                "name": "SelectByLine",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    htmlCode: code,\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Line',\r\n  },\r\n}"
             },
             {
                 "name": "Small",
@@ -139,6 +199,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/design-system/src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<CodeViewComponent>",
+                "file": "projects/design-system/src/stories/code-view.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -169,6 +240,68 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/design-system/src/stories/code-view.stories.ts": [
+                {
+                    "name": "code",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "`\r\n<div class=\"container\">\r\n  <h1>Hello World</h1>\r\n  <p>This is a paragraph of text.</p>\r\n</div>\r\n`"
+                },
+                {
+                    "name": "code2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "`\r\n<div class=\"container\">\r\n  <h1>Hello World</h1>\r\n  <p>This is a paragraph of text.</p>\r\n  <button (click)=\"onClick()\">Click me</button>\r\n</div>\r\n`"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CodeViewComponent>",
+                    "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n      htmlCode: signal(args.htmlCode), // Wrap htmlCode in a signal\r\n    },\r\n  }),\r\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SelectByElement",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    htmlCode: code2,\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+                },
+                {
+                    "name": "SelectByLine",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    htmlCode: code,\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Line',\r\n  },\r\n}"
+                }
+            ],
             "projects/design-system/src/stories/button.stories.ts": [
                 {
                     "name": "Large",
@@ -314,6 +447,19 @@
                     "kind": 183
                 }
             ],
+            "projects/design-system/src/stories/code-view.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<CodeViewComponent>",
+                    "file": "projects/design-system/src/stories/code-view.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/design-system/src/stories/header.stories.ts": [
                 {
                     "name": "Story",
@@ -409,6 +555,76 @@
             },
             {
                 "filePath": "projects/design-system/src/stories/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "code",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "code2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SelectByElement",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SelectByLine",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/stories/code-view.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
