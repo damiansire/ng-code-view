@@ -98,7 +98,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<CodeViewComponent>",
-                "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n      htmlCode: signal(args.htmlCode), // Wrap htmlCode in a signal\r\n    },\r\n  }),\r\n}"
+                "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "meta",
@@ -148,7 +148,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    htmlCode: '<p>No code </p>',\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
             },
             {
                 "name": "Secondary",
@@ -269,7 +269,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<CodeViewComponent>",
-                    "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n      htmlCode: signal(args.htmlCode), // Wrap htmlCode in a signal\r\n    },\r\n  }),\r\n}"
+                    "defaultValue": "{\r\n  title: 'CodeView',\r\n  component: CodeViewComponent,\r\n  tags: ['autodocs'],\r\n  render: (args) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
@@ -279,7 +279,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    htmlCode: '<p>No code </p>',\r\n    textSize: 'text-2xl',\r\n    selectBy: 'Element',\r\n  },\r\n}"
                 },
                 {
                     "name": "SelectByElement",
